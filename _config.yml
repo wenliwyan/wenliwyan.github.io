@@ -1,0 +1,21 @@
+title: Wenli's Tech Blog
+name: Wenli Yan
+description: Log the nitty gritty to enable fast memory recall.
+github_username: wenliwyan
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# GitHub Pages settings (https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll#configuring-jekyll-in-your-github-pages-site)
+lsi: false
+safe: true
+source: .
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
