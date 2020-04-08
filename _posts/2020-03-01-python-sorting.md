@@ -42,6 +42,11 @@ Bob
 ['Carl', 'Alice', 'Bob']
 ```
 
+```python
+>>> nums = [5, 9, 2, 6]
+>>> sorted(range(len(nums)), key=lambda k: nums[k])
+[2, 0, 3, 1]
+```
 Reference: [https://wiki.python.org/moin/HowTo/Sorting](https://wiki.python.org/moin/HowTo/Sorting)
 
 Relevant:
