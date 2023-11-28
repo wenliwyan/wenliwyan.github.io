@@ -53,13 +53,13 @@ Four basic rules:
 * Addition rule: If A and B are mutually exclusive, then $P(A\text{ or }B)=P(A)+P(B)$
 * Multiplication rule: If A and B are independent, then $P(A\text{ and }B)=P(A)P(B)$
 
-General multiplication rule: $P(A\text{ and }B)=P(A)P(B|A)$
+General multiplication rule: $P(A\text{ and }B)=P(A)P(B\mid A)$
 
-**Bayes' rule**: $P(B|A)=\frac{P(A|B)P(B)}{P(A)}=\frac{P(A|B)P(B)}{P(A|B)P(B)+P(A|\text{not }B)P(\text{not }B)}$
+**Bayes' rule**: $P(B\mid A)=\frac{P(A\mid B)P(B)}{P(A)}=\frac{P(A\mid B)P(B)}{P(A\mid B)P(B)+P(A\mid \text{not }B)P(\text{not }B)}$
 
 case 1. *1% of the population has a certain disease. If an infected person is tested, then there is a 95% chance that the test is positive. If the person is not infected, then there is a 2% chance that the test gives an erroneous positive result (‘false positive’). Given that a person tests positive, what are the chances that he has the disease?*
 
-$P(D|+)=\frac{P(+|D)P(D)}{P(+|D)P(D)+P(+|\text{no }D)P(\text{no }D)}=\frac{0.95\times0.01}{0.95\times0.01+0.02\times0.99}=32.4\%$
+$P(D\mid +)=\frac{P(+\mid D)P(D)}{P(+\mid D)P(D)+P(+\mid \text{no }D)P(\text{no }D)}=\frac{0.95\times0.01}{0.95\times0.01+0.02\times0.99}=32.4\%$
 
 case 2. Warner's randomized response model to solve the problem that students may be too embarrassed to answer truthfully. *We do a survey that first instructs students to toss a coin twice. If the student gets
 ‘tails’ on the first toss, then the student has to answer question 1, otherwise the student answers question 2. Q1: Have you ever cheated on an exam in college? Q2: Did you get ‘tails’ on the second toss?*
