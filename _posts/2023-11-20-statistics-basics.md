@@ -111,7 +111,7 @@ If the form is **linear**, a good measure of strength is **correlation coefficie
 
 $r=\frac{1}{n}\sum_{i=1}^{n}\frac{x_i-\bar{x}}{s_x}\times\frac{y_i-\bar{y}}{s_y}$
 
-**method of least squares**: for $n$ pairs of data $(x_1, y_1),\dots,(x_n, y_n)$ that has linear relationship, the **regression line** is the line $\hat{y}_i=a+bx_i$ that minimizes the sum of the squared distances (*residual*) between the observed $y_i$ and the $\hat{y}_i$, i.e. $\sum_{i=1}^n(y_i-\hat{y}_i)^2$. Solution: $b=r\frac{s_y}{s_x}$, $a=\bar{y}-b\bar{x}$
+**method of least squares**: for $n$ pairs of data $(x_1, y_1),\dots,(x_n, y_n)$ that has linear relationship, the **regression line** is the line $\hat{y}_i=a+bx_i$ that minimizes the sum of the squared distances (*residual*) between the observed $y_i$ and the predicted $\hat{y}_i$, i.e. $$\sum_{i=1}^n(y_i-\hat{y}_i)^2$$. Solution: $b=r\frac{s_y}{s_x}$, $a=\bar{y}-b\bar{x}$.
 
 R-squared: $R^2=r^2$, gives the fraction of the variation in the y-values that is explained by the regression line.
 
@@ -151,7 +151,7 @@ Hypothesis testing proceeds by collecting data and evaluating whether the data a
 
 * **chi-square statistic** (testing several categories): $\chi^2=\sum_{\text{all categories}}\frac{(\text{observed} - \text{expected})^2}{\text{expected}}$
 
-* **ANOVA** (Analysis of Variance) - compare the variation between the groups to the variation within the groups: $F=\frac{\text{MST}}{\text{MSE}}=\frac{SST/(k-1)}{SSE/(N-k)}=\frac{\sum_j(\bar{y}_j-\bar{\bar{y}})^2}{\sum_j\sum_i(y_{ij}-\bar{y}_j)^2}$ (MST and MSE are treatment mean square and error mean square respectively, and SST and SSE are treatment sum of squares and error sum of squares respectively).
+* **ANOVA** (Analysis of Variance) - compare the variation between the groups to the variation within the groups: $$F=\frac{MST}{MSE}=\frac{SST/(k-1)}{SSE/(N-k)}=\frac{\sum_j(\bar{y}_j-\bar{\bar{y}})^2}{\sum_j\sum_i(y_{ij}-\bar{y}_j)^2}$$ (MST and MSE are treatment mean square and error mean square respectively, and SST and SSE are treatment sum of squares and error sum of squares respectively).
 
 **p-value**: the probability of getting a value of test statistics *as extreme or more extreme* than the observed value, assuming $H_0$ is true. *The smaller the p-value, the stronger the evidence against $H_0$*. Often the criterion for rejecting $H_0$ is a p-value smaller than 5%, then the result is called **statistically significant**.
 
