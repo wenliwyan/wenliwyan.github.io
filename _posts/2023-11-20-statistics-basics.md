@@ -1,6 +1,6 @@
 ---
 layout: post
-title: statistics basics
+title: Statistics Basics
 mathjax: true
 ---
 
@@ -91,6 +91,10 @@ Simple random sample is not the binomial setting, because $p$ changes after a su
 
 ### Sampling distribution
 
+Sampling distribution is a theoretical distribution that describes all possible values of a sample statistic from random samples of the same size, taken from the same population.
+
+Sampling variability is the variability of the sample statistic values characterized by the sampling distribution.
+
 **standard error (SE)**: tells roughly how far off the statistic will be from its expected value. It plays for the statistic the same **role that the standard deviation $\sigma$ plays for one observation drawn at random**.
 
 * sample mean $\bar{x}_n$: $\mathbf{E}(\bar{x}_n)=\mu$, $\mathbf{SE}(\bar{x}_n)=\frac{\sigma}{\sqrt{n}}$ (**square root law**)
@@ -116,6 +120,8 @@ $r=\frac{1}{n}\sum_{i=1}^{n}\frac{x_i-\bar{x}}{s_x}\times\frac{y_i-\bar{y}}{s_y}
 R-squared: $R^2=r^2$, gives the fraction of the variation in the y-values that is explained by the regression line.
 
 ### Confidence intervals
+
+Confidence interval is the estimation of an interval describing a plausible range of values for the unknown truth.
 
 The SE tells the likely size of the chance error. Confidence intervals give a more precise statement.
 
