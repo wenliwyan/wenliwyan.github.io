@@ -6,6 +6,10 @@ mathjax: true
 
 Statistics is fundamental to data science. The necessity to learn or to revisit statistics basics often arises in the middle of meticulous practice. The following notes are collected from references listed in the end, and hope to serve as a convenient reference to refresh the knowledge on statistics basics when needed.
 
+**Table of Contents**
+* TOC
+{:toc}
+
 ## Descriptive Statistics
 
 Descriptive statistics are used to communicate information and to support reasoning about data. When exploring data of large size, it becomes essential to use **summaries**.
